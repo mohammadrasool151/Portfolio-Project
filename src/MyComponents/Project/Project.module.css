@@ -1,0 +1,179 @@
+.wholebox{
+    height: 100vh;
+    /* width: 100vw; */
+    /* background-color: rgb(192, 158, 224); */
+}
+.topic{
+    height: 7vh;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(29, 8, 5);
+    padding-top: 20px;
+}
+.box{
+    /* background-color: rgb(168, 29, 202); */
+    /* height: 96vh; */
+    /* width: 100vw;  */
+    display: flex;
+    /* height: 95vh; */
+    
+}
+/* *{
+    background-color: rgb(50, 70, 136);
+    height: 20vh;
+    width: 50vw;
+    
+} */
+.left{
+    flex: 1;
+    /* background-color: aqua; */
+}
+.right{
+    flex: 1;
+    /* background-color: aquamarine; */
+}
+.insideLeft{
+    padding: 10vh 5vh 0vh 25vh;
+    /* background-color: yellow; */
+
+}
+.chatapptopic{
+font-size: 60px;
+}
+.chatappbox{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: deeppink;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.chatappupperbox{
+    height: 25px;
+    background-color: rgb(106, 104, 107);
+    position: sticky;
+    z-index: 666;
+}
+.allcircle{
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    /* align-content: center; */
+   
+
+}
+.singlecircle{
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+.chatappimg{
+    padding-top: 0;
+    width: 100%;
+    /* height: 100px; */
+    animation: movve 10s infinite ease-in-out alternate;
+
+}
+@keyframes movve{
+    /* 50%{
+
+        transform: translateY(-50%);
+    } */
+
+    /* 66%{
+        transform: translateY(-122px);
+    }
+     */
+     100%{
+        transform: translateY(-100%);
+    }
+    
+}
+.chatappbutton{
+    padding: 20px 200px 0 25px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.btn1{
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* transition: all 250ms; */
+    /* background-color: rgb(4, 156, 226); */
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(4, 156, 226);
+    border-style: none;
+    box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+    -webkit-box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+    -moz-box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+
+}
+.btn1:hover{
+    /* background-color: rgb(61, 48, 172); */
+    transform: scale(1.05) ;
+    box-shadow: rgba(63, 39, 202, 0.35) 0 -25px 18px -14px inset,rgba(65, 62, 192, 0.25) 0 1px 2px,rgba(50, 60, 153, 0.25) 0 2px 4px,rgba(40, 42, 150, 0.25) 0 4px 8px,rgba(69, 35, 160, 0.25) 0 8px 16px,rgba(48, 71, 145, 0.25) 0 16px 32px;
+    
+}
+.btn2{
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* transition: all 250ms; */
+    background-color: rgb(22, 184, 224);
+    color: white;
+    border: 1px solid rgb(108, 39, 187);
+    border-style: none;
+    box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+    -webkit-box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+    -moz-box-shadow: 1px 2px 18px 1px rgba(43,81,222,0.54);
+
+}
+.btn2:hover{
+    /* background-color: rgb(61, 48, 172); */
+    background-color: white;
+    color: black;
+    /* transform: scale(1.05) rotate(-1deg); */
+    transform: scale(1.05);
+    box-shadow: rgba(63, 39, 202, 0.35) 0 -25px 18px -14px inset,rgba(65, 62, 192, 0.25) 0 1px 2px,rgba(50, 60, 153, 0.25) 0 2px 4px,rgba(40, 42, 150, 0.25) 0 4px 8px,rgba(69, 35, 160, 0.25) 0 8px 16px,rgba(48, 71, 145, 0.25) 0 16px 32px;
+    
+}
+
+@media(max-width:768px){
+    .wholebox{
+        height: 100%;
+        /* width: 100vw; */
+        /* background-color: rgb(192, 158, 224); */
+    }
+ 
+    .box{
+        display: flex;
+        flex-direction: column;  
+        position: relative; 
+    }
+
+    .insideLeft{
+        padding: 5vh 1vh 0vh 1vh;
+    }
+    .chatapptopic{
+    font-size: 2.15rem;
+    text-align: center;
+ 
+    }
+    .chatappbox{
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .chatappbutton{
+        /* position: relative;   */
+        padding: 20px 0px 10px 0px;    
+    }
+
+}

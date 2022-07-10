@@ -1,0 +1,124 @@
+.box{
+    /* background-color: rgb(0, 255, 21); */
+    height: 100vh;
+    /* background-color: rgb(226, 11, 208); */
+    /* overflow: hidden; */
+    /* width: 99vw; */
+    /* position: relative; */
+}
+.box2{
+    position: relative;
+    /* background-color: rgb(186, 224, 137); */
+    /* 
+    opacity: 0.2; */
+    /* visibility: hidden; */
+}
+.snowvid{
+    /* background-color: rgb(60, 85, 197); */
+    /* width: 50vw; */
+    /* height: 100vh; */
+    /* object-fit: fill; */
+    
+}
+.snowvidd{
+    position: absolute;
+    width: 100%;
+   height: 100%;
+    opacity: 0.3;
+    /* background-color: rgb(211, 39, 16); */
+    /* z-index: ; */
+}
+.topic{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+.insidebox{
+    padding: 0vh 5vw 0vh 5vw;
+    /* background-color: blueviolet; */
+
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.layer{
+    width: 35vw;
+    height: 4vh;
+    /* background-color: rgb(255, 255, 255); */
+    margin-bottom: 15vh;
+    border-radius: 20px;
+    display: flex;
+    /* position: relative; */
+    /* text-align: center; */
+
+}
+.layer p{
+    padding: 5px 0 0 10px;
+}
+.layerabove{
+    /* margin-top: 10px; */
+    /* width: calc(80%); */
+    background-color: rgb(50, 252, 0);
+    height: 4vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.layerabove p{
+    /* color: brown; */
+padding-top: 1px;
+}
+
+
+@media(max-width:768px){
+
+   .box{
+    height: 115vh;
+    
+   }
+   .box2{
+    /* position: relative; */
+    /* background-color: rgb(186, 224, 137); */
+    /* 
+    opacity: 0.2; */
+    /* visibility: hidden; */
+}
+   
+    .snowvidd{
+        /* position: absolute; */
+        object-fit: fill;
+        height: 115vh;
+        opacity: 0.4;
+       
+    }
+   
+    .insidebox{
+        padding: 0vh 5vw 0vh 5vw;
+        /* background-color: blueviolet; */
+    
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .layer{
+        width: 90vw;
+        margin-bottom: 8vh;
+        display: flex;
+    
+    }
+   
+    
+    
+
+
+
+
+}

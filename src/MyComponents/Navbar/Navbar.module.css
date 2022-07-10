@@ -1,0 +1,152 @@
+.box{
+    background-color: #666;
+    height: 60px;
+    display: flex;
+    /* overflow: hidden; */
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 696;
+    /* position: fixed; */
+    /* position: relative; */
+
+}
+.left{
+    flex: 1;
+}
+.left p{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: #fff;
+}
+.right{
+    flex: 1;
+    background-color: rgb(187, 37, 37);
+     /* display: flex;
+     */
+   /* justify-content: space-around; */
+    /* padding-right: 20px; */
+    /* padding-left: 430px; */
+
+}
+.insideright{
+    /* flex: 1; */
+     display: flex;
+     /* background-color: rgb(226, 116, 116); */
+   /* justify-content: space-around; */
+    /* padding-right: 20px; */
+    padding-left: 200px;
+
+}
+.layerofbtn{
+    text-align: center;
+    /* background-color: aquamarine; */
+    /* border-right: 1px solid blueviolet; */
+    /* border-left: 1px solid blueviolet; */
+    padding: 0 5px 0 5px;
+    width: 80px;
+    height: 60px;
+
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    /* margin-top: 17px; */
+    /* padding-left: 50px; */
+}
+.btn p{
+    padding-top: 18px;
+}
+.layerofbtn:hover{
+    background-color: rgb(3, 87, 160);
+    cursor: pointer;
+}
+.upleft2{
+    visibility: hidden;
+}
+@media(max-width:768px){
+    .box{
+        visibility: hidden;
+    }
+    .upleft2{
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: end;
+        visibility: visible;
+        position: fixed;
+        z-index: 666;
+        right: 10px;
+        top: 8px;
+
+    }
+
+    .bar{
+
+        color: black;
+       height: 30px;
+       width: 30px;
+    }
+    .box2{
+
+        visibility: visible;
+        position: fixed;
+
+        /* Most important part */
+
+        width: 100%; /* very important part */
+        z-index: 966; /* very important part */
+        background-color: #333;
+        top: 0;
+        height: 100vh;
+        animation : scale-up-top 1s ease-in-out alternate;
+    }
+    @keyframes scale-up-top{
+        0%{
+            transform: translateY(-60vh);
+    }
+
+    }
+    .left2{
+        display: flex;
+        justify-content: end;
+
+    }
+    .xmark{
+        /* text-align: end; */
+        right: 10px;
+        top: 8px;
+        position: absolute;
+        color: #fff;
+       height: 30px;
+       width: 30px;
+       visibility: visible;
+    }
+
+    .insideright2{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-top: 100px;
+
+    }
+    .layerofbtn2{
+        text-align: center;
+        padding: 0 5px 0 0px;
+        width: 80px;
+        height: 60px;
+
+    }
+    .btn2{
+        text-decoration: none;
+        color: #fff;
+    }
+    .btn2 p{
+        padding-top: 18px;
+    }
+    .layerofbtn2:hover{
+        background-color: rgb(3, 87, 160);
+        cursor: pointer;
+    }
+   }
